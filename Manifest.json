@@ -2,5 +2,10 @@
   "name": "REXtension",
   "description": "REX - chrome extension!",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+
+  "content_scripts": [{
+    "matches": ["*://*.nimo.tv/*"],
+    "js": ["pages/nimo.tv/chatbox.js"]
+  }]
 }
